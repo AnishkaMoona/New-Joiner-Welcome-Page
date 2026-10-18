@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Joiner Welcome Guide | Singapore Office</title>
+    <meta
+      name="description"
+      content="Interactive first-week onboarding guide and checklist for new team members joining the Singapore office."
+    />
+    <meta property="og:title" content="New Joiner Welcome Guide | Singapore Office" />
+    <meta
+      property="og:description"
+      content="Interactive first-week onboarding guide and checklist for new team members joining the Singapore office."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <!-- Relative link for GitHub Pages compatibility -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Accessibility skip link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ====================================================================
+         STICKY TOP NAVIGATION MENU
+         ==================================================================== -->
+    <header class="site-header" id="site-header">
+      <div class="container nav-container">
+        <a href="#welcome" class="brand-wrapper" aria-label="Welcome Guide Homepage">
+          <span class="brand-icon" aria-hidden="true">🌱</span>
+          <div>
+            <span class="brand-text">New Joiner Guide</span>
+            <span class="brand-sub">Singapore Office 🇸🇬</span>
+          </div>
+        </a>
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-menu">
+            <li><a href="#welcome" class="nav-link active">Home</a></li>
+            <li><a href="#checklist" class="nav-link">Checklist</a></li>
+            <li><a href="#timetable" class="nav-link">Timetable</a></li>
+            <li><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+            <li><a href="#ask-hr" class="nav-link">Ask HR</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- ==================================================================
+           SECTION 1: HERO
+           ================================================================== -->
+      <section class="hero-section" id="welcome" aria-labelledby="hero-heading">
+        <div class="container">
+          <div class="hero-card">
+            <div class="badge-row">
+              <span class="badge badge-green">
+                <span aria-hidden="true">🗓️</span> Start date: Monday 2 November
+              </span>
+              <span class="badge badge-navy">Singapore Nutrition Hub</span>
+            </div>
+
+            <h1 class="hero-title" id="hero-heading">Welcome to the team!</h1>
+            <p class="hero-subtitle">
+              Your step-by-step companion for an easy, calm and confident first week.
+            </p>
+
+            <!-- One-line welcome from HR -->
+            <blockquote class="welcome-quote">
+              <p>
+                &ldquo;We are delighted to welcome you to our Singapore team! We are here to support
+                you every step of the way, and we hope your first week is inspiring, smooth, and full of great conversations.&rdquo;
+              </p>
+              <footer>&mdash; The Singapore HR &amp; People Experience Team</footer>
+            </blockquote>
+
+            <div class="hero-meta-grid">
+              <div class="meta-pill">
+                <span class="meta-icon" aria-hidden="true">📍</span>
+                <div>
+                  <strong>Office Location</strong>
+                  Marina Bay Financial Centre, Tower 2, Level 18
+                </div>
+              </div>
+              <div class="meta-pill">
+                <span class="meta-icon" aria-hidden="true">⏰</span>
+                <div>
+                  <strong>Day 1 Hours</strong>
+                  09:00 &ndash; 17:00 SGT
+                </div>
+              </div>
+              <div class="meta-pill">
+                <span class="meta-icon" aria-hidden="true">👔</span>
+                <div>
+                  <strong>Dress Code</strong>
+                  Smart Casual (comfortable shoes welcome)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 2: FIRST-WEEK CHECKLIST
+           ================================================================== -->
+      <section class="section" id="checklist" aria-labelledby="checklist-heading">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Week 1 Essentials</span>
+            <h2 class="section-title" id="checklist-heading">First-Week Checklist</h2>
+            <p class="section-desc">
+              Tick off each milestone as you complete it. Your progress is saved automatically on your browser.
+            </p>
+          </div>
+
+          <!-- Progress summary card -->
+          <div class="progress-card">
+            <div class="progress-header">
+              <div class="progress-title-wrap">
+                <span class="progress-label">Your Onboarding Progress:</span>
+                <span class="progress-count" id="progress-text" aria-live="polite">0 of 8 done</span>
+              </div>
+              <span class="progress-percentage" id="progress-percent" aria-hidden="true">0%</span>
+            </div>
+
+            <div class="progress-track" aria-hidden="true">
+              <div
+                class="progress-fill"
+                id="progress-fill"
+                role="progressbar"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="8"
+                aria-valuetext="0 of 8 tasks completed"
+                style="width: 0%"
+              ></div>
+            </div>
+
+            <div class="progress-actions">
+              <span>Saved locally in your device</span>
+              <button
+                type="button"
+                id="reset-checklist-btn"
+                class="btn-secondary"
+                aria-label="Reset checklist progress"
+              >
+                Reset Checklist
+              </button>
+            </div>
+          </div>
+
+          <!-- The 8 Checklist Items -->
+          <ul class="checklist-list" role="list">
+            <!-- 1. Collect laptop -->
+            <li>
+              <label class="checklist-card" for="task-1">
+                <input
+                  type="checkbox"
+                  id="task-1"
+                  class="checklist-input"
+                  aria-describedby="desc-task-1"
+                />
+                <span class="custom-checkbox" aria-hidden="true">
+                  <svg class="custom-checkbox-icon" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <div class="item-content">
+                  <div class="item-title">
+                    <span>1. Collect laptop</span>
+                    <span class="item-tag">Day 1</span>
+                  </div>
+                  <p class="item-desc" id="desc-task-1">
+                    Visit the IT Service Desk on Level 18 to pick up your pre-imaged laptop, power adapter, and security pass.
+                  </p>
+                </div>
+              </label>
+            </li>
+
+            <!-- 2. Set up password -->
+            <li>
+              <label class="checklist-card" for="task-2">
+                <input
+                  type="checkbox"
+                  id="task-2"
+                  class="checklist-input"
+                  aria-describedby="desc-task-2"
+                />
+                <span class="custom-checkbox" aria-hidden="true">
+                  <svg class="custom-checkbox-icon" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <div class="item-content">
+                  <div class="item-title">
+                    <span>2. Set up password</span>
+                    <span class="item-tag">Day 1</span>
+                  </div>
+                  <p class="item-desc" id="desc-task-2">
+                    Activate your single sign-on (SSO) login, set your primary master password, and pair your phone for 2-factor authentication.
+                  </p>
+                </div>
+              </label>
+            </li>
+
+            <!-- 3. Complete onboarding module -->
+            <li>
+              <label class="checklist-card" for="task-3">
+                <input
+                  type="checkbox"
+                  id="task-3"
+                  class="checklist-input"
+                  aria-describedby="desc-task-3"
+                />
+                <span class="custom-checkbox" aria-hidden="true">
+                  <svg class="custom-checkbox-icon" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <div class="item-content">
+                  <div class="item-title">
+                    <span>3. Complete onboarding module</span>
+                    <span class="item-tag">Days 1-2</span>
+                  </div>
+                  <p class="item-desc" id="desc-task-3">
+                    Watch the interactive &ldquo;Introduction to Nutrition &amp; Wellness&rdquo; orientation module on the internal learning portal.
+                  </p>
+                </div>
+              </label>
+            </li>
+
+            <!-- 4. Coffee chat with your manager -->
+            <li>
+              <label class="checklist-card" for="task-4">
+                <input
+                  type="checkbox"
+                  id="task-4"
+                  class="checklist-input"
+                  aria-describedby="desc-task-4"
+                />
+                <span class="custom-checkbox" aria-hidden="true">
+                  <svg class="custom-checkbox-icon" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <div class="item-content">
+                  <div class="item-title">
+                    <span>4. Coffee chat with your manager</span>
+                    <span class="item-tag">Days 1-3</span>
+                  </div>
+                  <p class="item-desc" id="desc-task-4">
+                    Have an informal 1-on-1 coffee at the pantry or nearby café to align on your immediate role expectations and first-week plan.
+                  </p>
+                </div>
+              </label>
+            </li>
+
+            <!-- 5. Meet your buddy -->
+            <li>
+              <label class="checklist-card" for="task-5">
+                <input
+                  type="checkbox"
+                  id="task-5"
+                  class="checklist-input"
+                  aria-describedby="desc-task-5"
+                />
+                <span class="custom-checkbox" aria-hidden="true">
+                  <svg class="custom-checkbox-icon" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <div class="item-content">
+                  <div class="item-title">
+                    <span>5. Meet your buddy</span>
+                    <span class="item-tag">Days 1-2</span>
+                  </div>
+                  <p class="item-desc" id="desc-task-5">
+                    Connect with your assigned Singapore onboarding buddy for a friendly walkaround, pantry tips, and lunch spot recommendations.
+                  </p>
+                </div>
+              </label>
+            </li>
+
+            <!-- 6. Read the AI policy -->
+            <li>
+              <label class="checklist-card" for="task-6">
+                <input
+                  type="checkbox"
+                  id="task-6"
+                  class="checklist-input"
+                  aria-describedby="desc-task-6"
+                />
+                <span class="custom-checkbox" aria-hidden="true">
+                  <svg class="custom-checkbox-icon" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <div class="item-content">
+                  <div class="item-title">
+                    <span>6. Read the AI policy</span>
+                    <span class="item-tag">Days 2-3</span>
+                  </div>
+                  <p class="item-desc" id="desc-task-6">
+                    Review our company policy on responsible AI usage, data privacy standards, and guidelines for internal documents.
+                  </p>
+                </div>
+              </label>
+            </li>
+
+            <!-- 7. Set up payroll -->
+            <li>
+              <label class="checklist-card" for="task-7">
+                <input
+                  type="checkbox"
+                  id="task-7"
+                  class="checklist-input"
+                  aria-describedby="desc-task-7"
+                />
+                <span class="custom-checkbox" aria-hidden="true">
+                  <svg class="custom-checkbox-icon" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <div class="item-content">
+                  <div class="item-title">
+                    <span>7. Set up payroll</span>
+                    <span class="item-tag">By Thursday</span>
+                  </div>
+                  <p class="item-desc" id="desc-task-7">
+                    Enter your Singapore local bank account number and CPF details on the secure Employee Self-Service portal.
+                  </p>
+                </div>
+              </label>
+            </li>
+
+            <!-- 8. Join the team chat -->
+            <li>
+              <label class="checklist-card" for="task-8">
+                <input
+                  type="checkbox"
+                  id="task-8"
+                  class="checklist-input"
+                  aria-describedby="desc-task-8"
+                />
+                <span class="custom-checkbox" aria-hidden="true">
+                  <svg class="custom-checkbox-icon" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <div class="item-content">
+                  <div class="item-title">
+                    <span>8. Join the team chat</span>
+                    <span class="item-tag">Day 1</span>
+                  </div>
+                  <p class="item-desc" id="desc-task-8">
+                    Open Slack/Teams, set your profile photo, and post a quick hello in the #singapore-office and team announcement channels.
+                  </p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 3: DAY 1 TIMETABLE, CONTACTS & FAQ
+           ================================================================== -->
+
+      <!-- 3A: Day 1 Timetable (9:00 to 17:00) -->
+      <section class="section" id="timetable" aria-labelledby="timetable-heading">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Your Schedule</span>
+            <h2 class="section-title" id="timetable-heading">Day 1 Timetable</h2>
+            <p class="section-desc">
+              Here is what to expect on Monday 2 November from 09:00 to 17:00. Everything is planned so you won&rsquo;t feel rushed.
+            </p>
+          </div>
+
+          <div class="timetable-list" role="list">
+            <div class="timetable-card" role="listitem">
+              <span class="timetable-time-badge">09:00 &ndash; 09:30</span>
+              <div class="timetable-content">
+                <h3>Arrival &amp; Reception Welcome</h3>
+                <p>
+                  Arrive at Marina Bay Financial Centre, Tower 2 lobby. Show your identity card at the security counter to collect your guest badge, then take the lift to Level 18 where an HR team member will meet you.
+                </p>
+                <span class="timetable-location">📍 Level 18 Main Reception</span>
+              </div>
+            </div>
+
+            <div class="timetable-card" role="listitem">
+              <span class="timetable-time-badge">09:30 &ndash; 10:45</span>
+              <div class="timetable-content">
+                <h3>IT Equipment Setup &amp; Logins</h3>
+                <p>
+                  Head to the IT Service Desk to receive your pre-configured laptop, monitor adapters, and security credentials. The IT team will guide you through first-time login, Wi-Fi, and email.
+                </p>
+                <span class="timetable-location">📍 IT Service Room 18-B</span>
+              </div>
+            </div>
+
+            <div class="timetable-card" role="listitem">
+              <span class="timetable-time-badge">10:45 &ndash; 11:15</span>
+              <div class="timetable-content">
+                <h3>Pantry Tea &amp; Coffee Break</h3>
+                <p>
+                  Grab a hot drink, explore our healthy nutrition bar in the pantry, and meet colleagues who are in the office for an informal morning greeting.
+                </p>
+                <span class="timetable-location">📍 Level 18 Wellness Pantry</span>
+              </div>
+            </div>
+
+            <div class="timetable-card" role="listitem">
+              <span class="timetable-time-badge">11:15 &ndash; 12:30</span>
+              <div class="timetable-content">
+                <h3>HR Onboarding &amp; Office Orientation</h3>
+                <p>
+                  A friendly walk-through of company culture, health benefits, leave policies, and office facilities (wellness room, phone booths, meeting spaces, and printing stations).
+                </p>
+                <span class="timetable-location">📍 Meeting Room &ldquo;Orchid&rdquo;</span>
+              </div>
+            </div>
+
+            <div class="timetable-card" role="listitem">
+              <span class="timetable-time-badge">12:30 &ndash; 14:00</span>
+              <div class="timetable-content">
+                <h3>Welcome Team Lunch</h3>
+                <p>
+                  Join your manager and immediate teammates for a welcoming lunch at a sheltered food hub nearby. No business talk—just getting to know one another!
+                </p>
+                <span class="timetable-location">📍 Marina Bay Link Mall / Lau Pa Sat</span>
+              </div>
+            </div>
+
+            <div class="timetable-card" role="listitem">
+              <span class="timetable-time-badge">14:00 &ndash; 15:15</span>
+              <div class="timetable-content">
+                <h3>Meet Your Buddy &amp; Workspace Walkthrough</h3>
+                <p>
+                  Settle into your designated desk with your onboarding buddy. They will show you how to adjust the ergonomic sit-stand desk, locate office supplies, and set up your printer PIN.
+                </p>
+                <span class="timetable-location">📍 Team Seating Area (Zone A)</span>
+              </div>
+            </div>
+
+            <div class="timetable-card" role="listitem">
+              <span class="timetable-time-badge">15:15 &ndash; 16:15</span>
+              <div class="timetable-content">
+                <h3>Manager 1-on-1 Catch-up</h3>
+                <p>
+                  A relaxed conversation with your reporting manager to review your role, walk through key stakeholder introductions, and establish 30-day onboarding milestones.
+                </p>
+                <span class="timetable-location">📍 Focus Pod 3</span>
+              </div>
+            </div>
+
+            <div class="timetable-card" role="listitem">
+              <span class="timetable-time-badge">16:15 &ndash; 17:00</span>
+              <div class="timetable-content">
+                <h3>Day 1 Wrap-up &amp; Sign-off</h3>
+                <p>
+                  Check off today&rsquo;s tasks on your guide, bookmark internal resources, test your calendar access for tomorrow, and head home on time!
+                </p>
+                <span class="timetable-location">📍 Your Workspace</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3B: Useful Contacts -->
+      <section class="section" id="contacts" aria-labelledby="contacts-heading">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Key Support</span>
+            <h2 class="section-title" id="contacts-heading">Useful Contacts</h2>
+            <p class="section-desc">
+              Whenever you have questions or need assistance, our local Singapore support leads are here to help.
+            </p>
+          </div>
+
+          <div class="contacts-grid">
+            <!-- HR Contact Card -->
+            <div class="contact-card">
+              <div class="contact-header">
+                <div class="contact-avatar" aria-hidden="true">🤝</div>
+                <div class="contact-title-group">
+                  <h3>HR &amp; People Care</h3>
+                  <span class="contact-subtitle">Singapore HR Team</span>
+                </div>
+              </div>
+              <ul class="contact-details">
+                <li class="contact-detail-row">
+                  <span class="contact-icon" aria-hidden="true">📧</span>
+                  <span>sg-people@company-nutrition.example</span>
+                </li>
+                <li class="contact-detail-row">
+                  <span class="contact-icon" aria-hidden="true">📍</span>
+                  <span>Level 18, Zone A (Near Pantry)</span>
+                </li>
+                <li class="contact-detail-row">
+                  <span class="contact-icon" aria-hidden="true">🕒</span>
+                  <span>Mon&ndash;Fri, 08:30 &ndash; 17:30 SGT</span>
+                </li>
+              </ul>
+              <a
+                href="mailto:sg-people@company-nutrition.example?subject=New%20Joiner%20Question%20-%20Singapore"
+                class="contact-action-btn"
+              >
+                <span>Email HR Team</span>
+              </a>
+            </div>
+
+            <!-- IT Helpdesk Contact Card -->
+            <div class="contact-card">
+              <div class="contact-header">
+                <div class="contact-avatar" aria-hidden="true">💻</div>
+                <div class="contact-title-group">
+                  <h3>IT Helpdesk</h3>
+                  <span class="contact-subtitle">Technical Support Desk</span>
+                </div>
+              </div>
+              <ul class="contact-details">
+                <li class="contact-detail-row">
+                  <span class="contact-icon" aria-hidden="true">📧</span>
+                  <span>it-helpdesk.sg@company-nutrition.example</span>
+                </li>
+                <li class="contact-detail-row">
+                  <span class="contact-icon" aria-hidden="true">📍</span>
+                  <span>Level 18, Room 18-B (Ext. 4400)</span>
+                </li>
+                <li class="contact-detail-row">
+                  <span class="contact-icon" aria-hidden="true">🕒</span>
+                  <span>Mon&ndash;Fri, 08:30 &ndash; 18:00 SGT</span>
+                </li>
+              </ul>
+              <a
+                href="mailto:it-helpdesk.sg@company-nutrition.example?subject=IT%20Setup%20Assistance%20-%20New%20Joiner"
+                class="contact-action-btn"
+              >
+                <span>Email IT Desk</span>
+              </a>
+            </div>
+
+            <!-- Facilities Contact Card -->
+            <div class="contact-card">
+              <div class="contact-header">
+                <div class="contact-avatar" aria-hidden="true">🏢</div>
+                <div class="contact-title-group">
+                  <h3>Facilities &amp; Office</h3>
+                  <span class="contact-subtitle">Workplace Concierge</span>
+                </div>
+              </div>
+              <ul class="contact-details">
+                <li class="contact-detail-row">
+                  <span class="contact-icon" aria-hidden="true">📧</span>
+                  <span>sg-facilities@company-nutrition.example</span>
+                </li>
+                <li class="contact-detail-row">
+                  <span class="contact-icon" aria-hidden="true">📍</span>
+                  <span>Level 18, Reception Counter</span>
+                </li>
+                <li class="contact-detail-row">
+                  <span class="contact-icon" aria-hidden="true">🕒</span>
+                  <span>Mon&ndash;Fri, 08:00 &ndash; 18:00 SGT</span>
+                </li>
+              </ul>
+              <a
+                href="mailto:sg-facilities@company-nutrition.example?subject=Pass%20%2F%20Workplace%20Request%20-%20New%20Joiner"
+                class="contact-action-btn"
+              >
+                <span>Email Facilities</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3C: Frequently Asked Questions (Accordion) -->
+      <section class="section" id="faq" aria-labelledby="faq-heading">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Got Questions?</span>
+            <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+            <p class="section-desc">
+              Tap any question below to see the answer.
+            </p>
+          </div>
+
+          <div class="faq-accordion">
+            <!-- FAQ 1 -->
+            <details class="faq-item" open>
+              <summary class="faq-summary">
+                <span>1. What should I wear on my first day and throughout the week?</span>
+                <svg class="faq-icon-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <div class="faq-body">
+                Our Singapore office follows a <strong>Smart Casual</strong> dress code from Monday to Thursday, and a relaxed <strong>Casual Friday</strong>. Clean sneakers, polo shirts, dresses, trousers, and chinos are all great. We keep the air conditioning brisk, so having a light cardigan or jacket at your desk is recommended!
+              </div>
+            </details>
+
+            <!-- FAQ 2 -->
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>2. Where can I store my lunch or find food nearby?</span>
+                <svg class="faq-icon-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <div class="faq-body">
+                Our Level 18 pantry is equipped with shared clean refrigerators, microwaves, and dining tables. If you prefer to eat out, there are dozens of options within a 3-minute sheltered walk, including Marina Bay Link Mall food court, Lau Pa Sat, and local hawker stalls around Shenton Way.
+              </div>
+            </details>
+
+            <!-- FAQ 3 -->
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>3. How and when do I get my permanent building access pass?</span>
+                <svg class="faq-icon-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <div class="faq-body">
+                On Day 1, you will use a temporary visitor lanyard provided at the security desk. During your HR orientation, we will capture your badge photo, and your permanent RFID office card will be activated and ready for collection by Tuesday afternoon at Reception.
+              </div>
+            </details>
+
+            <!-- FAQ 4 -->
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>4. When is monthly payroll processed in Singapore?</span>
+                <svg class="faq-icon-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <div class="faq-body">
+                Salaries are credited on the <strong>20th of each month</strong> via direct bank transfer (or the preceding working day if the 20th falls on a weekend or public holiday). Please ensure your bank details and CPF registration are filled in on the Employee Portal by Thursday of your first week.
+              </div>
+            </details>
+
+            <!-- FAQ 5 -->
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>5. What should I do if I feel unwell during my first week?</span>
+                <svg class="faq-icon-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <div class="faq-body">
+                Your well-being is our highest priority! If you feel sick, please send a quick message to your direct manager and HR via email or Slack. Our company medical insurance card is active from your first day, allowing cashless visits at over 500 panel clinics across Singapore.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SECTION 4: "QUESTIONS FOR HR" FORM
+           ================================================================== -->
+      <section class="section" id="ask-hr" aria-labelledby="form-heading">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Direct Support</span>
+            <h2 class="section-title" id="form-heading">Questions for HR</h2>
+            <p class="section-desc">
+              Have something on your mind that isn&rsquo;t covered above? Send our team a note and we will get back to you promptly.
+            </p>
+          </div>
+
+          <div class="form-card">
+            <!-- Form element with client-side JavaScript validation -->
+            <form id="hr-question-form" novalidate>
+              <!-- Name Field -->
+              <div class="form-group">
+                <label for="hr-name" class="form-label">
+                  Your Full Name <span class="required-star" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="hr-name"
+                  name="name"
+                  class="form-control"
+                  placeholder="e.g. Alex Tan"
+                  required
+                  aria-describedby="name-error name-hint"
+                />
+                <p class="form-hint" id="name-hint">Please enter your preferred first and last name.</p>
+                <div class="field-error" id="name-error" role="alert" aria-live="polite"></div>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group">
+                <label for="hr-email" class="form-label">
+                  Work or Personal Email <span class="required-star" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="hr-email"
+                  name="email"
+                  class="form-control"
+                  placeholder="e.g. alex.tan@company.com"
+                  required
+                  aria-describedby="email-error email-hint"
+                />
+                <p class="form-hint" id="email-hint">We will reply to this email address.</p>
+                <div class="field-error" id="email-error" role="alert" aria-live="polite"></div>
+              </div>
+
+              <!-- Question Field (>= 10 chars) -->
+              <div class="form-group">
+                <label for="hr-question" class="form-label">
+                  Your Question <span class="required-star" aria-hidden="true">*</span>
+                </label>
+                <textarea
+                  id="hr-question"
+                  name="question"
+                  class="form-control"
+                  placeholder="How can we help make your first week smoother? (Minimum 10 characters)"
+                  required
+                  aria-describedby="question-error question-hint"
+                ></textarea>
+                <p class="form-hint" id="question-hint">Minimum 10 characters so we have enough context to help.</p>
+                <div class="field-error" id="question-error" role="alert" aria-live="polite"></div>
+              </div>
+
+              <button type="submit" class="btn-primary" id="hr-submit-btn">
+                <span>Submit Question to HR</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </form>
+
+            <!-- Thank You Message (Shown after valid client validation) -->
+            <div
+              class="thankyou-box"
+              id="hr-thankyou-box"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              <div class="thankyou-icon" aria-hidden="true">✓</div>
+              <h3>Thank you, <span id="thankyou-recipient-name">there</span>!</h3>
+              <p>
+                Your question has been received by the Singapore People &amp; Culture team. We will review it and reply directly to your email within one business day.
+              </p>
+              <button type="button" class="btn-secondary" id="send-another-btn">
+                Ask Another Question
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+         FOOTER
+         ==================================================================== -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-top">
+          <div>
+            <div class="footer-brand">
+              <span aria-hidden="true">🌱</span> Singapore Onboarding Hub
+            </div>
+            <p class="footer-tagline">
+              Dedicated to our new colleagues joining the Singapore Nutrition team.
+            </p>
+          </div>
+          <ul class="footer-links">
+            <li><a href="#welcome" class="footer-link">Top</a></li>
+            <li><a href="#checklist" class="footer-link">Checklist</a></li>
+            <li><a href="#timetable" class="footer-link">Timetable</a></li>
+            <li><a href="#contacts" class="footer-link">Contacts</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+            <li><a href="#ask-hr" class="footer-link">Ask HR</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 Nutrition Singapore Pte. Ltd. &bull; Marina Bay Financial Centre, Tower 2, Singapore
+          </div>
+          <a href="#site-header" class="back-to-top-btn" aria-label="Back to top of page">
+            <span>Back to top</span>
+            <span aria-hidden="true">&uarr;</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Relative script for GitHub Pages compatibility -->
+    <script src="script.js"></script>
+  </body>
+</html>

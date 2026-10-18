@@ -1,0 +1,6 @@
+{
+  "name": "New Joiner Welcome Guide",
+  "description": "Interactive first-week onboarding guide and checklist for new team members joining the Singapore office.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
